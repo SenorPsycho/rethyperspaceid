@@ -1,0 +1,56 @@
+# RetHyperspaceID Configuration
+
+# Data paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  artifacts_dir: "artifacts"
+
+# Preprocessing parameters
+preprocessing:
+  target_size: [224, 224]
+  quality_threshold: 0.8
+  normalization: "imagenet"
+  augmentation: false
+
+# Model parameters
+model:
+  architecture: "efficientnet_b0"
+  embedding_dim: 1280
+  pretrained: true
+  device: "auto"  # auto, cpu, cuda
+
+# Privacy parameters
+privacy:
+  template_dim: 512
+  random_projection_seed: 42
+  sign_code_bits: 256
+  cancellable: true
+
+# Index parameters
+index:
+  type: "faiss"
+  metric: "cosine"
+  nlist: 100
+  nprobe: 10
+  use_gpu: false
+
+# Search parameters
+search:
+  top_k: 10
+  similarity_threshold: 0.7
+  clustering_threshold: 0.8
+
+# Training parameters
+training:
+  batch_size: 32
+  num_workers: 4
+  learning_rate: 0.001
+  epochs: 10
+  seed: 42
+
+# Logging
+logging:
+  level: "INFO"
+  save_logs: true
+  log_dir: "logs"
