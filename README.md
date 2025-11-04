@@ -21,12 +21,3 @@ RetHyperspaceID implements a complete pipeline for retina biometric identificati
 - Cancellable: Templates can be regenerated with new random seeds
 - Scalable: Handles large datasets (25k+ images) efficiently
 
-
-## Roadmap
-
-- [ ] Additional CNN architectures
-- [ ] Advanced privacy techniques
-- [ ] Web interface
-- [ ] Real-time processing
-- [ ] Multi-modal biometrics
-- [ ] Performance benchmarks
