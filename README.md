@@ -1,4 +1,3 @@
-Personal Project
 
 # RetHyperspaceID
 
